@@ -14,7 +14,8 @@ La carte a été implémentée avec Google Maps APIS.
 
 Il est possible d'avoir accès au projet, cependant il est nécessaire d'avoir en main une clé pour utiliser Google Maps. Dans le cas contraire le projet
 ne fonctionne pas :'(
-# hackatown2021V2
+
+# hackatown20212
 To add key:
 Add Google API key in the inline script section right below the div with ID as "map". *NOTE: During the hackathon, the key will remain active for the judges this step is not necessary. 
 
