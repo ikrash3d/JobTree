@@ -240,7 +240,7 @@ img {
 .description p {
   padding: 0px;
   margin: 0px;
-  margin-left: 5px;
+  margin-left: 10px;
 
 }
 
@@ -356,12 +356,7 @@ body {
   COLOR: white
 }
 
-<<<<<<< HEAD
-.container3{
-  margin-top: 20px;
-=======
 .displayDescriptionPlusIndex {
->>>>>>> 96ebd32b82114be3cbc3752a5bae701c876f4098
   display: flex;
   justify-content: center;
   width: 80%;

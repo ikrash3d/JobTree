@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-let map;
-let service;
-let infowindow;
-
-=======
 let map, heatMap;
 let servicePlaces;
 let geocoder;
@@ -20,7 +14,6 @@ let dataList = [];
 let currentSalary = 0;
 let marker;
 let currentAddress = "";
->>>>>>> 96ebd32b82114be3cbc3752a5bae701c876f4098
 
 function initMap() {
   const montreal = new google.maps.LatLng(45.508888, -73.561668);
@@ -41,23 +34,10 @@ function initMap() {
   });
 }
 
-<<<<<<< HEAD
-function test_func() {
-   var content = document.getElementById("test").value;
-   servicePlaces = new google.maps.places.PlacesService(map);
-   var request = {
-    query: content,
-    fields: ['name', 'geometry'],
-  };
-
-  service.findPlaceFromQuery(request, function(results, status) {
-    if (status === google.maps.places.PlacesServiceStatus.OK) {
-=======
 // Adds the marker to the map
 function createMarker() {
   geocoder.geocode({ 'address': currentAddress }, function (results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
->>>>>>> 96ebd32b82114be3cbc3752a5bae701c876f4098
       map.setCenter(results[0].geometry.location);
       if (marker)
         marker.setMap(null);
@@ -67,7 +47,6 @@ function createMarker() {
         draggable: true
       });
     }
-<<<<<<< HEAD
   });       
 }
 
@@ -79,8 +58,6 @@ function createMarker(place) {
   google.maps.event.addListener(marker, "click", () => {
     infowindow.setContent(place.name);
     infowindow.open(map);
-=======
->>>>>>> 96ebd32b82114be3cbc3752a5bae701c876f4098
   });
 }
 
